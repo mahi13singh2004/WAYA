@@ -122,13 +122,13 @@ const Home = () => {
       <div className={`transition-opacity duration-1000 ${homeVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <section className="w-full flex flex-col md:flex-row items-center justify-between px-3 sm:px-4 md:px-8 lg:px-20 pt-16 sm:pt-20 pb-8 sm:pb-12 bg-gradient-to-br from-white via-blue-50 to-blue-100 text-blue-900 shadow-xl gap-8 md:gap-0">
           <div className="w-full md:w-1/2 flex flex-col items-center text-center sm:items-start sm:text-left justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-3 sm:mb-4 drop-shadow-lg leading-tight">Explore Waya</h1>
-            <p className="text-base sm:text-xl md:text-2xl mb-4 sm:mb-6 leading-relaxed font-medium text-blue-800">
+            <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-2 sm:mb-4 drop-shadow-lg leading-tight">Explore Waya</h1>
+            <p className="text-sm sm:text-xl md:text-2xl mb-3 sm:mb-6 leading-relaxed font-medium text-blue-800">
               Your dream travel begins here — Handcrafted plans, personalized support & stress-free journeys.
             </p>
             <a
               href="/contact"
-              className="inline-block bg-blue-500 text-white font-semibold px-6 sm:px-7 py-2.5 sm:py-3 rounded-xl shadow-lg hover:bg-blue-600 transition text-base sm:text-lg"
+              className="inline-block bg-blue-500 text-white font-semibold px-5 sm:px-7 py-2 sm:py-3 rounded-xl shadow-lg hover:bg-blue-600 transition text-base sm:text-lg"
             >
               Book Now
             </a>

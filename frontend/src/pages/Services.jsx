@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import hotelImg from '../assets/hotel.jpg';
 import foodImg from '../assets/food.jpg';
@@ -42,9 +42,18 @@ const serviceData = [
 
 const Services = () => {
   const navigate = useNavigate();
+  const [loadedImages, setLoadedImages] = useState(Array(serviceData.length).fill(false));
 
   const handleGoToContact = () => {
     navigate('/contact');
+  };
+
+  const handleImageLoad = idx => {
+    setLoadedImages(prev => {
+      const arr = [...prev];
+      arr[idx] = true;
+      return arr;
+    });
   };
 
   return (
@@ -119,11 +128,19 @@ const Services = () => {
             <div className="flip-card w-full h-full rounded-2xl shadow-xl glow">
               <div className="flip-card-inner w-full h-full">
                 <div className="face front bg-white flex flex-col justify-center items-center p-6">
-                  <img
-                    src={service.img}
-                    alt={service.title}
-                    className="w-48 h-48 object-cover rounded-xl shadow-lg mb-4 transition-transform duration-300"
-                  />
+                  {/* Skeleton loader while image loads */}
+                  <div className="w-48 h-48 mb-4 rounded-xl flex items-center justify-center">
+                    {!loadedImages[i] && (
+                      <div className="w-full h-full bg-slate-200 animate-pulse rounded-xl" />
+                    )}
+                    <img
+                      src={service.img}
+                      alt={service.title}
+                      loading="lazy"
+                      className={`w-48 h-48 object-cover rounded-xl shadow-lg transition-transform duration-300 ${loadedImages[i] ? '' : 'hidden'}`}
+                      onLoad={() => handleImageLoad(i)}
+                    />
+                  </div>
                   <h3 className="text-2xl font-bold text-blue-700">{service.title}</h3>
                 </div>
                 <div className="face back text-center text-blue-900 px-6 py-8">
