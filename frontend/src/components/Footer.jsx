@@ -33,7 +33,6 @@ const Footer = () => {
             <div className="relative z-20 max-w-7xl mx-auto px-2 sm:px-8">
                 <div className="glass-footer-card rounded-3xl shadow-2xl border-2 border-sky-400/30 bg-white/10 backdrop-blur-md px-4 sm:px-8 py-10 md:py-14 mb-4 md:mb-8 mt-8 md:mt-0">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
-                        {/* About */}
                         <div>
                             <h2 className="text-2xl font-extrabold mb-4 tracking-wide text-sky-300 drop-shadow">WAYA</h2>
                             <p className="text-neutral-200 mb-7 leading-relaxed text-base">
@@ -47,7 +46,6 @@ const Footer = () => {
                                 <a href="tel:+917619619602" aria-label="Call" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-orange-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaPhoneAlt /></a>
                             </div>
                         </div>
-                        {/* Useful Links */}
                         <div>
                             <h3 className="text-lg font-bold mb-5 tracking-wide text-sky-200">Useful Links</h3>
                             <ul className="space-y-3">
@@ -56,7 +54,6 @@ const Footer = () => {
                                 <li><a href="/contact" className="hover:text-sky-400 transition font-medium">Contact Us</a></li>
                             </ul>
                         </div>
-                        {/* We Organize */}
                         <div>
                             <h3 className="text-lg font-bold mb-5 tracking-wide text-sky-200">We Organize</h3>
                             <ul className="space-y-3 text-neutral-200">
@@ -67,7 +64,6 @@ const Footer = () => {
                                 <li>Complete Travel Itinerary</li>
                             </ul>
                         </div>
-                        {/* Reach Us */}
                         <div>
                             <h3 className="text-lg font-bold mb-5 tracking-wide text-sky-200">Reach Us</h3>
                             <div className="bg-white/10 border border-sky-400/20 rounded-2xl p-5 space-y-3 backdrop-blur-sm">
@@ -78,7 +74,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                {/* Scroll to Top Button */}
                 <button
                     onClick={scrollToTop}
                     className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-gradient-to-br from-sky-400 to-blue-600 shadow-xl flex items-center justify-center text-white text-2xl hover:scale-110 hover:shadow-2xl transition-all animate-bounce"

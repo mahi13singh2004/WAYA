@@ -41,9 +41,8 @@ const serviceData = [
 ];
 
 const Services = () => {
-  const navigate = useNavigate(); // for navigation on click
+  const navigate = useNavigate();
 
-  // Handler for card click and "Book Now" button
   const handleGoToContact = () => {
     navigate('/contact');
   };

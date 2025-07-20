@@ -6,7 +6,6 @@ const Contact = () => {
     return (
         <div className="w-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-100 to-blue-50 py-6 px-3 sm:px-4 overflow-hidden">
             <div className="w-full max-w-7xl flex flex-col md:flex-row rounded-3xl overflow-hidden shadow-2xl bg-white/80 backdrop-blur-lg mb-6">
-                {/* Image Section */}
                 <div className="relative w-full md:w-1/2 h-64 md:h-auto">
                     <img
                         src={contactImg}
@@ -16,7 +15,6 @@ const Contact = () => {
                     <div className="absolute inset-0 bg-blue-700/60" />
                 </div>
 
-                {/* Form Section */}
                 <div className="w-full md:w-1/2 flex flex-col justify-center items-center bg-white/80 p-4 sm:p-8">
                     <div className="w-full max-w-xl bg-white rounded-2xl p-6 sm:p-8 shadow-xl">
                         <h3 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-6 text-center">Get in Touch</h3>
@@ -52,9 +50,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            {/* Responsive Contact Info Boxes */}
             <div className="w-full max-w-6xl flex flex-wrap gap-4 sm:gap-6 justify-center items-stretch px-2">
-                {/* Address */}
                 <div className="flex-1 min-w-[260px] max-w-[360px] bg-white rounded-2xl shadow p-4 flex items-center gap-4 hover:scale-105 hover:shadow-blue-400 transition duration-300 cursor-pointer">
                     <div className="bg-blue-100 p-5 sm:p-6 rounded-xl flex items-center justify-center">
                         <FaMapMarkerAlt className="text-2xl text-blue-600" />
@@ -65,7 +61,6 @@ const Contact = () => {
                     </div>
                 </div>
 
-                {/* Email */}
                 <div className="flex-1 min-w-[260px] max-w-[360px] bg-white rounded-2xl shadow p-4 flex items-center gap-4 hover:scale-105 hover:shadow-cyan-400 transition duration-300 cursor-pointer">
                     <div className="bg-cyan-100 p-4 sm:p-5 rounded-xl flex items-center justify-center">
                         <FaEnvelope className="text-2xl text-cyan-600" />
@@ -75,8 +70,6 @@ const Contact = () => {
                         <div className="text-gray-500 text-base sm:text-lg">explorewaya@gmail.com</div>
                     </div>
                 </div>
-
-                {/* Phone */}
                 <div className="flex-1 min-w-[260px] max-w-[360px] bg-white rounded-2xl shadow p-4 flex items-center gap-4 hover:scale-105 hover:shadow-orange-400 transition duration-300 cursor-pointer">
                     <div className="bg-orange-100 p-4 sm:p-5 rounded-xl flex items-center justify-center">
                         <FaPhoneAlt className="text-2xl text-orange-500" />

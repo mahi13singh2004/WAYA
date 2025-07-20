@@ -3,7 +3,7 @@ import { FaUsers, FaPlane, FaBed, FaUtensils } from 'react-icons/fa';
 import header1 from "../assets/header1.jpg";
 import header2 from "../assets/header2.jpg";
 import header3 from "../assets/header3.jpg";
-import statsBg from '../assets/logo.jpg'; // Replace with your stats background image
+import statsBg from '../assets/logo.jpg'; 
 import { FaPlaneDeparture } from 'react-icons/fa';
 import Footer from '../components/Footer';
 
@@ -70,7 +70,6 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100 text-blue-900">
-      {/* Stats Splash Section */}
       {showSplash && (
         <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-lg bg-blue-200/80">
           <div className="absolute inset-0">
@@ -105,7 +104,6 @@ const Home = () => {
         </div>
       )}
 
-      {/* Welcome Message Section */}
       {showWelcome && (
         <div className={`fixed inset-0 z-40 flex items-center justify-center bg-blue-100 transition-opacity duration-900 ${welcomeFadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
           <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-blue-600 drop-shadow-lg tracking-wider animate-welcome-fade-in text-center">WELCOME TO WAYA</h1>
@@ -121,9 +119,7 @@ const Home = () => {
         </div>
       )}
 
-      {/* Main Content */}
       <div className={`transition-opacity duration-1000 ${homeVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-        {/* HERO */}
         <section className="w-full flex flex-col md:flex-row items-center justify-between px-3 sm:px-6 md:px-20 pt-16 sm:pt-20 pb-8 sm:pb-12 bg-gradient-to-br from-white via-blue-50 to-blue-100 text-blue-900 shadow-xl gap-8 md:gap-0">
           <div className="w-full md:w-1/2 flex flex-col items-center text-center sm:items-start sm:text-left justify-center">
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-3 sm:mb-4 drop-shadow-lg leading-tight">Explore Waya</h1>
@@ -152,11 +148,8 @@ const Home = () => {
           </div>
         </section>
 
-        {/* FREE TRAVEL PLAN SECTION */}
         <section className="w-full min-h-[520px] flex flex-col lg:flex-row items-center justify-center px-2 sm:px-4 md:px-8 lg:px-28 py-10 sm:py-16 md:py-20 relative overflow-hidden bg-gradient-to-br from-white via-blue-50 to-blue-100 shadow-inner gap-10 md:gap-0">
-          {/* Glowy BG */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2 w-60 sm:w-96 h-40 sm:h-80 bg-gradient-to-br from-blue-200/30 via-blue-100/20 to-transparent rounded-full blur-3xl z-0 pointer-events-none" />
-          {/* Centered Card Content */}
           <div className="flex-1 flex flex-col items-center lg:items-center z-10 w-full">
             <div className="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl border border-blue-100 px-4 sm:px-8 md:px-10 py-8 sm:py-10 max-w-2xl w-full flex flex-col items-center">
               <span className="inline-block px-4 sm:px-5 py-1 rounded-full bg-blue-100/70 border border-blue-300 text-blue-700 font-semibold text-sm sm:text-base mb-4 sm:mb-5 shadow text-center tracking-wide">
@@ -183,7 +176,6 @@ const Home = () => {
                 <span className="text-blue-700 font-extrabold underline ml-1">FREE</span> expertly crafted travel plan — no hidden fees, no surprises.<br />
                 <span className="text-xs text-blue-400 italic">Available for a limited time.</span>
               </p>
-              {/* Centered phone and button inside the card */}
               <div className="flex flex-col items-center justify-center gap-3 sm:gap-5 w-full mt-4 sm:mt-6">
                 <span className="inline-flex items-center justify-center w-40 sm:w-44 h-12 sm:h-16 rounded-full border-2 border-blue-300 text-blue-600 text-base sm:text-xl font-bold bg-blue-100/50 shadow-md">
                   +91-7619619602
@@ -197,7 +189,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* Logo / Visual */}
           <div className="hidden sm:flex flex-1 items-center justify-center mt-10 sm:mt-16 lg:mt-0 z-10 w-full">
             <div className="p-6 sm:p-8 lg:p-14 rounded-[60px] sm:rounded-[120px] bg-white/80 shadow-2xl border-2 border-blue-100 flex flex-col items-center w-40 sm:w-56 md:w-auto">
               <FaPlaneDeparture className="text-5xl sm:text-7xl text-blue-500 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300" />
@@ -206,7 +197,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* WHY CHOOSE US */}
         <section className="relative py-10 sm:py-16 md:py-20 bg-gradient-to-tr from-white via-blue-50 to-blue-100 px-2 sm:px-4 md:px-8 text-center overflow-hidden">
           <div className="absolute top-[-60px] left-[-100px] w-40 sm:w-96 h-40 sm:h-96 bg-gradient-to-br from-blue-100/40 via-blue-200/40 to-blue-50/30 opacity-30 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute right-[-80px] bottom-[-80px] w-32 sm:w-72 h-32 sm:h-72 bg-gradient-to-tr from-blue-200/30 via-blue-100/30 to-white/0 opacity-40 rounded-full blur-2xl pointer-events-none" />
@@ -240,7 +230,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* CTA */}
         <section className="py-10 sm:py-16 px-3 sm:px-6 text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 text-blue-900 rounded-t-3xl mt-10 sm:mt-20 shadow-md">
           <h2 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">Ready to Explore?</h2>
           <p className="text-base sm:text-lg mb-4 sm:mb-6">Let our journey masters plan the perfect getaway for you.</p>
