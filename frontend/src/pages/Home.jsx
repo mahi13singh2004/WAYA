@@ -3,7 +3,7 @@ import { FaUsers, FaPlane, FaBed, FaUtensils } from 'react-icons/fa';
 import header1 from "../assets/header1.jpg";
 import header2 from "../assets/header2.jpg";
 import header3 from "../assets/header3.jpg";
-import statsBg from '../assets/logo.jpg'; 
+import statsBg from '../assets/logo.jpg';
 import { FaPlaneDeparture } from 'react-icons/fa';
 import Footer from '../components/Footer';
 
@@ -69,9 +69,9 @@ const Home = () => {
   }, [showWelcome]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100 text-blue-900">
+    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100 text-blue-900 overflow-x-hidden">
       {showSplash && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-lg bg-blue-200/80">
+        <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-lg bg-blue-200/80 max-w-full overflow-x-hidden">
           <div className="absolute inset-0">
             <img src={statsBg} alt="Stats Background" className="w-full h-full object-cover opacity-30" />
             <div className="absolute inset-0 bg-gradient-to-b from-white/80 to-blue-200/90" />
@@ -80,12 +80,12 @@ const Home = () => {
             {stats.map((stat, i) => (
               <div
                 key={i}
-                className="flex flex-col items-center justify-center py-8 px-2 sm:py-10 sm:px-6 animate-splash-stat"
+                className="flex flex-col items-center justify-center py-5 px-1 sm:py-8 sm:px-4 md:py-10 md:px-6 animate-splash-stat"
                 style={{ animationDelay: `${i * 0.15 + 0.2}s` }}
               >
                 {stat.icon}
-                <div className="text-4xl sm:text-5xl font-extrabold text-blue-900 mb-1 mt-2 drop-shadow">{stat.value}</div>
-                <div className="text-base sm:text-lg text-blue-800 font-medium">{stat.label}</div>
+                <div className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-blue-900 mb-1 mt-2 drop-shadow">{stat.value}</div>
+                <div className="text-xs sm:text-base md:text-lg text-blue-800 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -120,7 +120,7 @@ const Home = () => {
       )}
 
       <div className={`transition-opacity duration-1000 ${homeVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-        <section className="w-full flex flex-col md:flex-row items-center justify-between px-3 sm:px-6 md:px-20 pt-16 sm:pt-20 pb-8 sm:pb-12 bg-gradient-to-br from-white via-blue-50 to-blue-100 text-blue-900 shadow-xl gap-8 md:gap-0">
+        <section className="w-full flex flex-col md:flex-row items-center justify-between px-3 sm:px-4 md:px-8 lg:px-20 pt-16 sm:pt-20 pb-8 sm:pb-12 bg-gradient-to-br from-white via-blue-50 to-blue-100 text-blue-900 shadow-xl gap-8 md:gap-0">
           <div className="w-full md:w-1/2 flex flex-col items-center text-center sm:items-start sm:text-left justify-center">
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold mb-3 sm:mb-4 drop-shadow-lg leading-tight">Explore Waya</h1>
             <p className="text-base sm:text-xl md:text-2xl mb-4 sm:mb-6 leading-relaxed font-medium text-blue-800">
@@ -148,7 +148,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="w-full min-h-[520px] flex flex-col lg:flex-row items-center justify-center px-2 sm:px-4 md:px-8 lg:px-28 py-10 sm:py-16 md:py-20 relative overflow-hidden bg-gradient-to-br from-white via-blue-50 to-blue-100 shadow-inner gap-10 md:gap-0">
+        <section className="w-full min-h-[520px] flex flex-col lg:flex-row items-center justify-center px-3 sm:px-4 md:px-8 lg:px-28 py-10 sm:py-16 md:py-20 relative overflow-hidden bg-gradient-to-br from-white via-blue-50 to-blue-100 shadow-inner gap-10 md:gap-0">
           <div className="absolute right-0 top-1/2 -translate-y-1/2 w-60 sm:w-96 h-40 sm:h-80 bg-gradient-to-br from-blue-200/30 via-blue-100/20 to-transparent rounded-full blur-3xl z-0 pointer-events-none" />
           <div className="flex-1 flex flex-col items-center lg:items-center z-10 w-full">
             <div className="bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl border border-blue-100 px-4 sm:px-8 md:px-10 py-8 sm:py-10 max-w-2xl w-full flex flex-col items-center">
@@ -197,7 +197,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="relative py-10 sm:py-16 md:py-20 bg-gradient-to-tr from-white via-blue-50 to-blue-100 px-2 sm:px-4 md:px-8 text-center overflow-hidden">
+        <section className="relative py-10 sm:py-16 md:py-20 bg-gradient-to-tr from-white via-blue-50 to-blue-100 px-3 sm:px-4 md:px-8 text-center overflow-hidden">
           <div className="absolute top-[-60px] left-[-100px] w-40 sm:w-96 h-40 sm:h-96 bg-gradient-to-br from-blue-100/40 via-blue-200/40 to-blue-50/30 opacity-30 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute right-[-80px] bottom-[-80px] w-32 sm:w-72 h-32 sm:h-72 bg-gradient-to-tr from-blue-200/30 via-blue-100/30 to-white/0 opacity-40 rounded-full blur-2xl pointer-events-none" />
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-blue-700 mb-8 sm:mb-14 drop-shadow-md tracking-tight relative z-10">
@@ -230,7 +230,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="py-10 sm:py-16 px-3 sm:px-6 text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 text-blue-900 rounded-t-3xl mt-10 sm:mt-20 shadow-md">
+        <section className="py-10 sm:py-16 px-3 sm:px-4 md:px-8 text-center bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 text-blue-900 rounded-t-3xl mt-10 sm:mt-20 shadow-md">
           <h2 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">Ready to Explore?</h2>
           <p className="text-base sm:text-lg mb-4 sm:mb-6">Let our journey masters plan the perfect getaway for you.</p>
           <a
@@ -242,7 +242,7 @@ const Home = () => {
         </section>
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };
