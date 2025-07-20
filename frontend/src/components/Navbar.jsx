@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    // Prevent body scroll when menu is open
     useEffect(() => {
         if (menuOpen) {
             document.body.classList.add('overflow-hidden');
@@ -15,6 +16,7 @@ const Navbar = () => {
         return () => document.body.classList.remove('overflow-hidden');
     }, [menuOpen]);
 
+    // Portal overlay for mobile menu
     const mobileMenuOverlay = menuOpen ? ReactDOM.createPortal(
         <div className="fixed inset-0 w-screen h-screen bg-white z-[99999] flex flex-col items-center justify-center transition-all duration-300">
             <button
@@ -54,10 +56,12 @@ const Navbar = () => {
     return (
         <nav className="w-full bg-white/70 backdrop-blur-md shadow-lg rounded-b-2xl border-b border-blue-100 z-50 relative">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 py-1 md:py-2 flex flex-col md:flex-row items-center md:justify-between gap-1 md:gap-0">
+                {/* Logo */}
                 <div className="flex items-center gap-1 md:gap-2 group cursor-pointer mb-2 md:mb-0">
                     <FaPlaneDeparture className="text-xl md:text-3xl text-blue-500 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300" />
                     <span className="text-xl md:text-2xl font-extrabold text-blue-700 tracking-tight group-hover:text-teal-500 transition-colors duration-300">WAYA</span>
                 </div>
+                {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-8">
                     <Link
                         to="/"
@@ -78,6 +82,7 @@ const Navbar = () => {
                         Contact
                     </Link>
                 </div>
+                {/* Hamburger Icon for Mobile */}
                 <button
                     className="md:hidden flex items-center justify-center text-blue-600 text-3xl p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
                     onClick={() => setMenuOpen(true)}
