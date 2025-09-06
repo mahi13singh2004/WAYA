@@ -34,16 +34,16 @@ const Footer = () => {
                 <div className="glass-footer-card rounded-3xl shadow-2xl border-2 border-sky-400/30 bg-white/10 backdrop-blur-md px-4 sm:px-8 py-10 md:py-14 mb-4 md:mb-8 mt-8 md:mt-0">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
                         <div>
-                            <h2 className="text-2xl font-extrabold mb-4 tracking-wide text-sky-300 drop-shadow">WAYA</h2>
+                            <h2 className="text-2xl font-extrabold mb-4 tracking-wide text-sky-300 drop-shadow">DRIFT</h2>
                             <p className="text-neutral-200 mb-7 leading-relaxed text-base">
-                                WAYA was built with a passion for making travel simple, exciting, and accessible for everyone. From beautiful stays and local food to smooth transportation and complete itineraries — we plan everything based on your needs. Travel your way — only with WAYA.
+                                DRIFT was built with a passion for making travel simple, exciting, and accessible for everyone. From beautiful stays and local food to smooth transportation and complete itineraries — we plan everything based on your needs. Travel your way — only with DRIFT.
                             </p>
                             <div className="flex gap-4 mt-4">
                                 <a href="https://www.facebook.com/people/Waya/61553188704146/?mibextid=LQQJ4d" aria-label="Facebook" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-purple-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaFacebookF /></a>
                                 <a href="https://x.com/explore_WAYA?s=21&t=Mi737I3DGJlD5DMCySTM_A" aria-label="Twitter" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-sky-400 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaTwitter /></a>
                                 <a href="https://www.instagram.com/explore_WAYA/?igsh=MWJla3I0b3Q4Z3lxOA%3D%3D&utm_source=qr#" aria-label="Instagram" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-pink-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaInstagram /></a>
-                                <a href="https://api.whatsapp.com/send?phone=917619619602&text=%20Hello%20WAYA" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-green-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaWhatsapp /></a>
-                                <a href="tel:+917619619602" aria-label="Call" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-orange-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaPhoneAlt /></a>
+                                <a href="https://api.whatsapp.com/send?phone=917760441501&text=%20Hello%20DRIFT" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-green-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaWhatsapp /></a>
+                                <a href="tel:+917760441501" aria-label="Call" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-orange-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaPhoneAlt /></a>
                             </div>
                         </div>
                         <div>
@@ -68,8 +68,8 @@ const Footer = () => {
                             <h3 className="text-lg font-bold mb-5 tracking-wide text-sky-200">Reach Us</h3>
                             <div className="bg-white/10 border border-sky-400/20 rounded-2xl p-5 space-y-3 backdrop-blur-sm">
                                 <div><span className="font-semibold text-neutral-100">Area we cover:</span> <span className="text-neutral-200">All over India</span></div>
-                                <div><span className="font-semibold text-neutral-100">Phone:</span> <a href="tel:+917619619602" className="hover:text-orange-400 transition">+91-7619619602</a></div>
-                                <div><span className="font-semibold text-neutral-100">Email:</span> <a href="mailto:explorewaya@gmail.com" className="hover:text-sky-400 transition">explorewaya@gmail.com</a></div>
+                                <div><span className="font-semibold text-neutral-100">Phone:</span> <a href="tel:+917760441501" className="hover:text-orange-400 transition">+91-7760441501</a></div>
+                                <div><span className="font-semibold text-neutral-100">Email:</span> <a href="mailto:yuvansh.1718@gmail.com" className="hover:text-sky-400 transition">yuvansh.1718@gmail.com</a></div>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,7 @@ const Footer = () => {
                     <FaArrowUp />
                 </button>
                 <div className="border-t border-neutral-800 pt-6 pb-2 text-center text-neutral-300 text-sm mt-4">
-                    © {new Date().getFullYear()} WAYA. All rights reserved.
+                    © {new Date().getFullYear()} DRIFT. All rights reserved.
                 </div>
             </div>
         </footer>

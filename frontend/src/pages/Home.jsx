@@ -60,7 +60,7 @@ const Home = () => {
 
       {showWelcome && (
         <div className={`fixed inset-0 z-40 flex items-center justify-center bg-blue-100 transition-opacity duration-900 ${welcomeFadeOut ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-purple-600 drop-shadow-lg tracking-wider animate-welcome-fade-in text-center">WELCOME TO WAYA</h1>
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-purple-600 drop-shadow-lg tracking-wider animate-welcome-fade-in text-center">WELCOME TO DRIFT</h1>
           <style>{`
             .animate-welcome-fade-in {
               animation: welcomeFadeIn 1.1s cubic-bezier(.4,0,.2,1);
@@ -76,7 +76,7 @@ const Home = () => {
       <div className={`transition-opacity duration-1000 ${homeVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <section className="w-full flex flex-col md:flex-row items-center justify-between px-3 sm:px-4 md:px-8 lg:px-20 pt-16 sm:pt-20 pb-8 sm:pb-12 bg-gradient-to-br from-white via-purple-50 to-purple-100 text-purple-900 shadow-xl gap-8 md:gap-0">
           <div className="w-full md:w-1/2 flex flex-col items-center text-center sm:items-start sm:text-left justify-center">
-            <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-2 sm:mb-4 drop-shadow-lg leading-tight">Explore Waya</h1>
+            <h1 className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-2 sm:mb-4 drop-shadow-lg leading-tight">Explore Drift</h1>
             <p className="text-sm sm:text-xl md:text-2xl mb-3 sm:mb-6 leading-relaxed font-medium text-purple-800">
               Your dream travel begins here — Handcrafted plans, personalized support & stress-free journeys.
             </p>
@@ -132,7 +132,7 @@ const Home = () => {
               </p>
               <div className="flex flex-col items-center justify-center gap-3 sm:gap-5 w-full mt-4 sm:mt-6">
                 <span className="inline-flex items-center justify-center w-40 sm:w-44 h-12 sm:h-16 rounded-full border-2 border-blue-300 text-purple-600 text-base sm:text-xl font-bold bg-blue-100/50 shadow-md">
-                  +91-7619619602
+                  +91-7760441501
                 </span>
                 <a
                   href="/contact"
@@ -145,7 +145,7 @@ const Home = () => {
           </div>
           <div className="hidden sm:flex flex-1 items-center justify-center mt-10 sm:mt-16 lg:mt-0 z-10 w-full">
             <div className="p-6 sm:p-8 lg:p-14 rounded-[60px] sm:rounded-[120px] bg-white/80 shadow-2xl border-2 border-purple-100 flex flex-col items-center w-40 sm:w-56 md:w-auto">
-              <img src={image1} alt="WAYA Logo" className="h-16 sm:h-20 md:h-24 w-auto group-hover:scale-110 transition-transform duration-300" />
+              <img src={image1} alt="Drift Logo" className="h-16 sm:h-20 md:h-24 w-auto group-hover:scale-110 transition-transform duration-300" />
             </div>
           </div>
         </section>
@@ -154,7 +154,7 @@ const Home = () => {
           <div className="absolute top-[-60px] left-[-100px] w-40 sm:w-96 h-40 sm:h-96 bg-gradient-to-br from-blue-100/40 via-blue-200/40 to-blue-50/30 opacity-30 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute right-[-80px] bottom-[-80px] w-32 sm:w-72 h-32 sm:h-72 bg-gradient-to-tr from-blue-200/30 via-blue-100/30 to-white/0 opacity-40 rounded-full blur-2xl pointer-events-none" />
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-purple-700 mb-8 sm:mb-14 drop-shadow-md tracking-tight relative z-10">
-            Why ExploreWaya?
+            Why Explore Drift?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 max-w-6xl mx-auto relative z-10">
             <div className="group bg-white/95 rounded-2xl shadow-xl border border-blue-100 px-5 sm:px-7 py-7 sm:py-10 flex flex-col items-center justify-center min-h-[120px] sm:min-h-[170px] transition transform hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-blue-200 cursor-pointer">

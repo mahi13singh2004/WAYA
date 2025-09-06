@@ -67,7 +67,7 @@ const Contact = () => {
                     </div>
                     <div>
                         <div className="font-bold text-xl text-slate-800">Mail Us 24/7</div>
-                        <div className="text-gray-500 text-base sm:text-lg">explorewaya@gmail.com</div>
+                        <div className="text-gray-500 text-base sm:text-lg">yuvansh.1718@gmail.com</div>
                     </div>
                 </div>
                 <div className="flex-1 min-w-[260px] max-w-[360px] bg-white rounded-2xl shadow p-4 flex items-center gap-4 hover:scale-105 hover:shadow-orange-400 transition duration-300 cursor-pointer">
@@ -76,7 +76,7 @@ const Contact = () => {
                     </div>
                     <div>
                         <div className="font-bold text-xl text-slate-800">Contact Us</div>
-                        <div className="text-gray-500 text-base sm:text-lg">+91-7619619602</div>
+                        <div className="text-gray-500 text-base sm:text-lg">+91-7760441501</div>
                     </div>
                 </div>
             </div>
