@@ -20,7 +20,7 @@ const Footer = () => {
                     </defs>
                 </svg>
             </div>
-            <div className="w-full h-2 bg-gradient-to-r from-blue-500 via-sky-400 to-cyan-400 mb-10 animate-footer-shimmer bg-[length:200%_100%] bg-left bg-no-repeat" />
+            <div className="w-full h-2 bg-gradient-to-r from-purple-500 via-sky-400 to-cyan-400 mb-10 animate-footer-shimmer bg-[length:200%_100%] bg-left bg-no-repeat" />
             <style>{`
         @keyframes footer-shimmer {
           0% { background-position: left; }
@@ -39,7 +39,7 @@ const Footer = () => {
                                 WAYA was built with a passion for making travel simple, exciting, and accessible for everyone. From beautiful stays and local food to smooth transportation and complete itineraries — we plan everything based on your needs. Travel your way — only with WAYA.
                             </p>
                             <div className="flex gap-4 mt-4">
-                                <a href="https://www.facebook.com/people/Waya/61553188704146/?mibextid=LQQJ4d" aria-label="Facebook" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-blue-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaFacebookF /></a>
+                                <a href="https://www.facebook.com/people/Waya/61553188704146/?mibextid=LQQJ4d" aria-label="Facebook" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-purple-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaFacebookF /></a>
                                 <a href="https://x.com/explore_WAYA?s=21&t=Mi737I3DGJlD5DMCySTM_A" aria-label="Twitter" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-sky-400 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaTwitter /></a>
                                 <a href="https://www.instagram.com/explore_WAYA/?igsh=MWJla3I0b3Q4Z3lxOA%3D%3D&utm_source=qr#" aria-label="Instagram" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-pink-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaInstagram /></a>
                                 <a href="https://api.whatsapp.com/send?phone=917619619602&text=%20Hello%20WAYA" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-12 h-12 flex items-center justify-center rounded-full bg-neutral-800 hover:bg-green-500 shadow-lg transition-all duration-200 text-2xl hover:scale-110 hover:rotate-[-8deg] hover:text-white"><FaWhatsapp /></a>
@@ -76,7 +76,7 @@ const Footer = () => {
                 </div>
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-gradient-to-br from-sky-400 to-blue-600 shadow-xl flex items-center justify-center text-white text-2xl hover:scale-110 hover:shadow-2xl transition-all animate-bounce"
+                    className="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-gradient-to-br from-sky-400 to-purple-600 shadow-xl flex items-center justify-center text-white text-2xl hover:scale-110 hover:shadow-2xl transition-all animate-bounce"
                     aria-label="Scroll to top"
                 >
                     <FaArrowUp />

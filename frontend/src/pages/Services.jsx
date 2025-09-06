@@ -48,7 +48,7 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-blue-100 py-16 px-6 flex flex-col items-center text-center">
+    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-purple-100 py-16 px-6 flex flex-col items-center text-center">
       <style>{`
         .flip-container {
           perspective: 1500px;
@@ -95,7 +95,7 @@ const Services = () => {
         }
       `}</style>
 
-      <h2 className="text-5xl font-black text-blue-800 mb-4 drop-shadow-md">
+      <h2 className="text-5xl font-black text-purple-800 mb-4 drop-shadow-md">
         Our Services
       </h2>
       <p className="text-xl text-gray-600 max-w-2xl mb-12">
@@ -124,9 +124,9 @@ const Services = () => {
                     alt={service.title}
                     className="w-48 h-48 object-cover rounded-xl shadow-lg mb-4 transition-transform duration-300"
                   />
-                  <h3 className="text-2xl font-bold text-blue-700">{service.title}</h3>
+                  <h3 className="text-2xl font-bold text-purple-700">{service.title}</h3>
                 </div>
-                <div className="face back text-center text-blue-900 px-6 py-8">
+                <div className="face back text-center text-purple-900 px-6 py-8">
                   <h3 className="text-4xl font-bold mb-3">{service.title}</h3>
                   <p className="text-gray-700 text-xl mb-6">{service.desc}</p>
                   <button
@@ -134,7 +134,7 @@ const Services = () => {
                       e.stopPropagation();
                       handleGoToContact();
                     }}
-                    className="mt-2 px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg text-lg font-bold shadow-xl hover:scale-105 transition"
+                    className="mt-2 px-8 py-3 bg-gradient-to-r from-purple-500 to-cyan-500 text-white rounded-lg text-lg font-bold shadow-xl hover:scale-105 transition"
                   >
                     Book Now
                   </button>
